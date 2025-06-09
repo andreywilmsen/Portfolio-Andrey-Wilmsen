@@ -9,7 +9,7 @@
   --color-express: #111111;
   --color-highlight: #00BCD4;
   --color-primary: #F2F2F2;
-  --color-secondary: #BBBBBB;
+  --color-secondary: #E0E0E0;
   --color-section-primary: #0F0F0F;
   --color-section-secondary: #111111;
   --color-table-row-one: #1C1C1C;
@@ -17,4 +17,5 @@
   --color-success: #007F5F;
   --color-edit: #0077B5;
   --color-delete: #E63946;
+  --color-text-secondary: #BBBBBB;
 }

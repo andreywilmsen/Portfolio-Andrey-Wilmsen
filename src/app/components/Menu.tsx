@@ -1,0 +1,41 @@
+"use client"
+
+import { useState } from "react"
+import Hamburguer from "./Hamburguer"
+import MenuItems from "./MenuItems"
+import Logo from "./Logo";
+
+interface HeaderProps {
+    items: string[];
+}
+
+export default function Header({ items }: HeaderProps) {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <header className={`flex bg-gray-950 ${isOpen ? "flex-col" : "flex-row"}`}>
+
+            <div className="w-full flex">
+                <div className="w-1/3">
+                    <Logo />
+                </div>
+
+                <nav className="flex px-5 w-2/3 justify-end md:w-1/3 md:justify-center">
+                    <MenuItems items={items} />
+
+                    <div className="flex flex-col justify-center md:hidden items-center">
+                        <button aria-expanded={isOpen} aria-label={isOpen ? "Fechar menu" : "Abrir menu"} className="flex justify-center items-center md:hidden" onClick={() => setIsOpen(!isOpen)}>
+                            <Hamburguer open={isOpen} />
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            {isOpen && (
+                <nav>
+                    <MenuItems items={items} mobile />
+                </nav>
+            )}
+        </header>
+    )
+}
