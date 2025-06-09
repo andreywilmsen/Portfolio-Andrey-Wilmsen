@@ -21,7 +21,7 @@ export default function Header({ items }: HeaderProps) {
                     <Logo />
                 </div>
 
-                <nav className="flex px-5 w-2/3 justify-end md:w-1/3 md:justify-center">
+                <div className="flex px-5 w-2/3 justify-end md:w-1/3 md:justify-center">
                     <MenuItems items={items} />
 
                     <div className="flex flex-col justify-center md:hidden items-center">
@@ -29,12 +29,12 @@ export default function Header({ items }: HeaderProps) {
                             <Hamburguer open={isOpen} />
                         </button>
                     </div>
-                </nav>
+                </div>
             </div>
             {isOpen && (
-                <nav>
+                <div>
                     <MenuItems items={items} mobile />
-                </nav>
+                </div>
             )}
         </header>
     )
