@@ -14,7 +14,7 @@ export default function Header({ items }: HeaderProps) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className={`flex bg-gray-950 ${isOpen ? "flex-col" : "flex-row"}`}>
+        <header className={`flex bg-black ${isOpen ? "flex-col" : "flex-row"} min-h-14 items-center`}>
 
             <div className="w-full flex">
                 <div className="w-1/3">
