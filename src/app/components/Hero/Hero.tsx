@@ -1,8 +1,8 @@
 "use client"
 
-import Button from "./Button";
-import TitleHero from "./TitleHero";
-import CaptionHero from "./CaptionHero";
+import Button from "../Button";
+import TitleHero from "../Hero/TitleHero";
+import CaptionHero from "../Hero/CaptionHero";
 
 export default function Hero() {
 

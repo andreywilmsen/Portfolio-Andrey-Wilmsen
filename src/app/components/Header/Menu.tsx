@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import Hamburguer from "./Hamburguer"
-import MenuItems from "./MenuItems"
-import Logo from "./Logo";
+import Hamburguer from "../Hamburguer"
+import MenuItems from "../Header/MenuItems"
+import Logo from "../Logo";
 
 interface HeaderProps {
     items: string[];
