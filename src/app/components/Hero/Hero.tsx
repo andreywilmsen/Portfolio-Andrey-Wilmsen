@@ -12,8 +12,8 @@ export default function Hero() {
                 <TitleHero />
                 <CaptionHero />
                 <div className="flex justify-center items-center gap-4 mt-4">
-                    <Button heroButtons source="github.png" name="Github" color="bg-github" href="https://github.com/andreywilmsen" />
-                    <Button heroButtons source="linkedin.png" name="Linkedin" color="bg-linkedin" href="https://www.linkedin.com/in/andrey-wilmsen-de-paula-2b1354345/" />
+                    <Button hidden heroButtons source="github.png" name="Github" color="bg-github" href="https://github.com/andreywilmsen" />
+                    <Button hidden heroButtons source="linkedin.png" name="Linkedin" color="bg-linkedin" href="https://www.linkedin.com/in/andrey-wilmsen-de-paula-2b1354345/" />
                 </div>
             </div>
         </section>

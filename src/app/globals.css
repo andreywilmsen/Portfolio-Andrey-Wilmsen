@@ -30,4 +30,5 @@ body {
   --color-edit: #0077B5;
   --color-delete: #E63946;
   --color-text-secondary: #BBBBBB;
+  --color-none: #ffffff00;
 }
