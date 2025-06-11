@@ -4,10 +4,7 @@ import { useState } from "react"
 import Hamburguer from "../Hamburguer"
 import MenuItems from "../Header/MenuItems"
 import Logo from "../Logo";
-
-interface HeaderProps {
-    items: string[];
-}
+import { HeaderProps } from "./types";
 
 export default function Header({ items }: HeaderProps) {
 

@@ -1,9 +1,5 @@
 "use client"
-
-interface BorderProps {
-    left?: boolean;
-    right?: boolean;
-}
+import { BorderProps } from "./types";
 
 export default function AboutBorder({ left, right }: BorderProps) {
     return (

@@ -1,8 +1,6 @@
 "use client"
 
-interface ProjectListContentProps {
-    project: { name: string, link: string },
-}
+import { ProjectListContentProps } from "./types"
 
 export default function ProjectListContent({ project }: ProjectListContentProps) {
     return (

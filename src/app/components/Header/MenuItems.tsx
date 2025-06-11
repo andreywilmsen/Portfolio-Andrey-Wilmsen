@@ -1,9 +1,6 @@
 "use client"
 
-interface HeaderProps {
-    items: string[];
-    mobile?: boolean;
-}
+import { HeaderProps } from "./types";
 
 export default function MenuItems({ items, mobile = false }: HeaderProps) {
 
