@@ -12,9 +12,13 @@ body {
   --color-linkedin: #0077B5;
   --color-github: #24292E;
   --color-react: #61DAFB;
+  --color-react-secondary: #303234;
   --color-node: #6CC24A;
+  --color-node-secondary: #4B4D43;
   --color-vue: #42B883;
-  --color-express: #111111;
+  --color-vue-secondary: #384C65;
+  --color-express: #313131;
+  --color-express-secondary: #F4F4F4;
   --color-highlight: #00BCD4;
   --color-primary: #F2F2F2;
   --color-secondary: #E0E0E0;
