@@ -7,7 +7,7 @@ import CaptionHero from "../Hero/CaptionHero";
 export default function Hero() {
 
     return (
-        <section className="bg-section-primary flex flex-col justify-center items-center w-full min-h-screen">
+        <section id="hero" className="bg-section-primary flex flex-col justify-center items-center w-full min-h-screen">
             <div className="flex flex-col justify-center items-center max-w-[600px] w-[90%]">
                 <TitleHero />
                 <CaptionHero />

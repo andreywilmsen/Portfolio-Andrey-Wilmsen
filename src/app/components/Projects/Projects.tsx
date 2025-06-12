@@ -9,11 +9,11 @@ import { projectData } from "./projectData";
 
 export default function Projects() {
     return (
-        <section className="bg-section-secondary flex flex-col justify-center items-center w-full min-h-screen">
+        <section id="projects" className="bg-section-secondary flex flex-col justify-center items-center w-full min-h-screen">
             <div className="w-5/6 md:w-2/3 lg:w-3/6 xl:w-2/6">
                 <ProjectTitle />
                 <ProjectsList listProjects={projectData.listProjects} />
-                <div className="flex justify-center items-center mt-20">
+                <div className="flex items-center mt-20">
                     <Button projectsButtons name="Todos projetos" source="github.png" color="bg-github" href="https://github.com/andreywilmsen" />
                 </div>
             </div>
