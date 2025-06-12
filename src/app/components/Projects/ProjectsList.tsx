@@ -10,19 +10,21 @@ export default function Projects({ listProjects }: ProjectListData) {
             {/* Recebe o array de objetos com seus nomes do projeto, os links deles e as tecnologias utilizadas (card) */}
 
             {listProjects.map((project, index) => (
-                <li key={index} className="my-5">
-                    {/* Passa os nomes e os links para esse componente */}
-                    <ProjectListContent project={project} />
+                <a key={index} href={project.link} target="_blank">
+                    <li key={index} className="my-5 hover:scale-105 transition-transform duration-300">
+                        {/* Passa os nomes e os links para esse componente */}
+                        <ProjectListContent project={project} />
 
-                    <div className="flex gap-2">
+                        <div className="flex gap-2">
 
-                        {/* Faz um map nos cards de cada projeto e cria os cards necessários (independente da quantidade) */}
-                        {project.card.map((tech, i) => (
-                            <TechCard key={i} tech={tech as "react" | "node" | "vue" | "express"} />
-                        ))}
+                            {/* Faz um map nos cards de cada projeto e cria os cards necessários (independente da quantidade) */}
+                            {project.card.map((tech, i) => (
+                                <TechCard key={i} tech={tech as "react" | "node" | "vue" | "express"} />
+                            ))}
 
-                    </div>
-                </li>
+                        </div>
+                    </li>
+                </a>
             ))}
         </ul>
     )

@@ -30,7 +30,7 @@ export default function Header({ items }: HeaderProps) {
             </div>
             {isOpen && (
                 <div>
-                    <MenuItems items={items} mobile />
+                    <MenuItems items={items} mobile onClickItem={() => setIsOpen(false)} />
                 </div>
             )}
         </header>

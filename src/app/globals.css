@@ -5,9 +5,19 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-    @apply bg-section-secondary text-white;
+  @apply bg-section-secondary text-white;
 }
 
+.bg-with-opacity::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/icons/fundo_wing_portfolio.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5%;
+  z-index: -1;
+}
 
 @theme {
   --color-linkedin: #0077B5;

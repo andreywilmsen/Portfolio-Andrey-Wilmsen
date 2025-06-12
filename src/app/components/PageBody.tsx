@@ -4,13 +4,10 @@ import Projects from './Projects/Projects';
 export default function PageBody() {
   return (<>
     {/* Bloco com fundo em camada separada */}
-    <div className="relative w-full">
-
-      {/* Camada de fundo com opacidade */}
-      <div className="absolute inset-0 bg-cover bg-center opacity-[0.5%] z-30 w-full lg:w-5/6" style={{ backgroundImage: 'url("/icons/fundo_wing_portfolio.png")' }} />
+    <div className="relative w-full bg-section-secondary">
 
       {/* Conteúdo principal acima da imagem */}
-      <div className="relative z-10">
+      <div className="relative z-10 w-full min-h-screen bg-section-secondary bg-with-opacity">
         <About />
         <Projects />
       </div>
