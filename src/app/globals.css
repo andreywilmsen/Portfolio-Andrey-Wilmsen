@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  @apply bg-section-secondary text-white;
+}
+
+.bg-with-opacity::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/icons/fundo_wing_portfolio.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5%;
+  z-index: -1;
+}
+
+@theme {
+  --color-linkedin: #0077B5;
+  --color-github: #24292E;
+  --color-react: #61DAFB;
+  --color-react-secondary: #303234;
+  --color-node: #6CC24A;
+  --color-node-secondary: #4B4D43;
+  --color-vue: #42B883;
+  --color-vue-secondary: #384C65;
+  --color-express: #313131;
+  --color-express-secondary: #F4F4F4;
+  --color-highlight: #00BCD4;
+  --color-primary: #F2F2F2;
+  --color-secondary: #E0E0E0;
+  --color-section-primary: #0F0F0F;
+  --color-section-secondary: #111111;
+  --color-table-row-one: #1C1C1C;
+  --color-table-row-two: #2E2E2E;
+  --color-success: #007F5F;
+  --color-edit: #0077B5;
+  --color-delete: #E63946;
+  --color-text-secondary: #BBBBBB;
+  --color-none: #ffffff00;
 }
