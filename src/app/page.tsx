@@ -2,6 +2,7 @@ import Menu from "./components/Header/Menu";
 import Hero from "./components/Hero/Hero";
 import PageBody from "./components/PageBody";
 import Footer from "./components/Footer/Footer";
+import AnchorButton from "./components/AnchorButton";
 // Dados mockados para menu (temporário)
 import { menuItems } from "./types";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <PageBody />
       <Footer />
+      <AnchorButton />
     </div>
   );
 }
