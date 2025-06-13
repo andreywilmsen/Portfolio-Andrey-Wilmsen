@@ -4,4 +4,5 @@ export const menuItems: { item: string; link: Links }[] = [
     { item: "Home", link: "hero" },
     { item: "Sobre", link: "about" },
     { item: "Projetos", link: "projects" },
+    { item: "Contato", link: "contact" },
 ];
