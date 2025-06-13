@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import AOSInitializer from './components/AOSInitializer';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
   description: "Portfólio pessoal desenvolvido em Next.js para apresentar projetos e habilidades como desenvolvedor fullstack.",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,6 +29,7 @@ export default function RootLayout({
       <body
         className={`overflow-x-hidden ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <AOSInitializer />
         {children}
       </body>
     </html>
