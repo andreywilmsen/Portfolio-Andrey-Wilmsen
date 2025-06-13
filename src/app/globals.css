@@ -33,7 +33,7 @@ body {
   background-image: url('/wallpaper/wallpaper_hero.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.0;
+  opacity: 0.03;
   z-index: -1;
   pointer-events: none;
 }
