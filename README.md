@@ -2,7 +2,6 @@
 ![React](https://img.shields.io/badge/React-19.0.0-blue?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.0-skyblue?logo=tailwindcss)
-![Build Status](https://github.com/andreywilmsen/Portfolio-Andrey-Wilmsen/actions/workflows/ci.yml/badge.svg)
 ![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
