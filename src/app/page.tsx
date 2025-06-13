@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import PageBody from "./components/PageBody";
 import Footer from "./components/Footer/Footer";
 import AnchorButton from "./components/AnchorButton";
+import Contact from "./components/Contact/Contact";
 // Dados mockados para menu (temporário)
 import { menuItems } from "./types";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Menu items={menuItems} />
       <Hero />
       <PageBody />
+      <Contact />
       <Footer />
       <AnchorButton />
     </div>

@@ -3,7 +3,6 @@
 import ProjectTitle from "./ProjectTitle";
 import ProjectsList from "./ProjectsList";
 import Button from "../Button";
-
 // Dados mockados para lista de projetos (temporário)
 import { projectData } from "./projectData";
 
