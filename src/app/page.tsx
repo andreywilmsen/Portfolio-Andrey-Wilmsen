@@ -7,10 +7,11 @@ import Contact from "./components/Contact/Contact";
 // Dados mockados para menu (temporário)
 import { menuItems } from "./types";
 
+
 export default function Home() {
   return (
     <div className="bg-black text-white">
-      <Menu items={menuItems} />
+      <Menu items={menuItems} home />
       <Hero />
       <PageBody />
       <Contact />
