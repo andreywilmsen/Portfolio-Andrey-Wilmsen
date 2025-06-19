@@ -1,5 +1,6 @@
 "use client"
 
+import clsx from "clsx";
 import Button from "../Button";
 import TitleHero from "../Hero/TitleHero";
 import CaptionHero from "../Hero/CaptionHero";
@@ -7,8 +8,8 @@ import CaptionHero from "../Hero/CaptionHero";
 export default function Hero() {
 
     return (
-        <section id="hero" className="bg-section-primary bg-with-opacity_hero flex flex-col justify-center items-center w-full min-h-screen">
-            <div data-aos="fade-up" className="flex flex-col justify-center items-center max-w-[600px] w-[90%]">
+        <section id="hero" className={clsx("bg-section-primary bg-with-opacity_hero flex flex-col justify-center items-center w-full min-h-screen")}>
+            <div data-aos="fade-up" className={clsx("flex flex-col justify-center items-center max-w-[600px] w-[90%]")}>
                 <TitleHero />
                 <CaptionHero />
                 <div className="flex justify-center items-center gap-4 mt-4">
