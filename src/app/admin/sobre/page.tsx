@@ -1,6 +1,7 @@
 import Header from "@/app/components/Header/Menu";
 import { menuItems } from "../types";
 import Table from "@/app/components/Table";
+import Button from "@/app/components/Button";
 
 export default function Sobre() {
   return (
@@ -10,6 +11,9 @@ export default function Sobre() {
         <div className="min-w-[400px] max-w-[700px] w-2/3 h-2/3">
           <h1 className="font-semibold text-[20px]">Sobre</h1>
           <Table />
+          <div className="flex justify-center md:justify-start items-center">
+            <Button hov addItem name="Adicionar" source="soma.png" color="bg-success" />
+          </div>
         </div>
       </div>
     </section>

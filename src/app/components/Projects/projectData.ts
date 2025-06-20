@@ -8,7 +8,7 @@ export const projectData: ProjectListData = {
             card: ["vue"]
         },
         {
-            name: "API Node.js para Gerenciamento de Usuários e Autenticação",
+            name: "API REST para gerenciamento de usuários e autenticação",
             link: "https://github.com/andreywilmsen/Login-JWT-TDD",
             card: ["node", "express"]
         },
