@@ -1,5 +1,6 @@
 "use client"
 
+import clsx from "clsx";
 import { TechCardProps } from "./types";
 
 const techConfig = {
@@ -13,7 +14,7 @@ export default function TechCard({ tech }: TechCardProps) {
     const config = techConfig[tech];
 
     return (
-        <div className={`flex justify-center items-center w-[64px] h-[20px] ${config.bg} ${config.text} rounded mt-2`}>
+        <div className={clsx(config.bg, config.text, "flex justify-center items-center w-[64px] h-[20px] rounded mt-2")}>
             <span className="text-[14px]">{config.label}</span>
         </div>
     );

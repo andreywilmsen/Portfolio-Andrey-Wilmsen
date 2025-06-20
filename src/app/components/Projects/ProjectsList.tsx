@@ -1,17 +1,18 @@
 "use client"
 
+import clsx from "clsx";
 import TechCard from "./TechCard";
 import ProjectListContent from "./ProjectListContent";
 import { ProjectListData } from "./types";
 
 export default function Projects({ listProjects }: ProjectListData) {
     return (
-        <ul className="text-secondary font-semibold text-[18px] mt-10">
+        <ul className={clsx("text-secondary font-semibold text-[18px] mt-10")}>
             {/* Recebe o array de objetos com seus nomes do projeto, os links deles e as tecnologias utilizadas (card) */}
 
             {listProjects.map((project, index) => (
                 <a key={index} href={project.link} target="_blank">
-                    <li key={index} className="my-5 hover:scale-105 transition-transform duration-300">
+                    <li key={index} className={clsx("my-5 hover:scale-105 transition-transform duration-300")}>
                         {/* Passa os nomes e os links para esse componente */}
                         <ProjectListContent project={project} />
 
