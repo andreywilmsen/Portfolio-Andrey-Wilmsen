@@ -11,9 +11,22 @@ export interface ButtonProps {
     hov?: boolean;
     aboutButtons?: boolean;
     tableButton?: boolean;
+    modalButton?: boolean;
     onClick?: () => void;
 }
 
 export interface LogoProps {
     hidden?: boolean;
+}
+
+export interface ModalProps {
+    nome: string,
+}
+
+export interface InputProps {
+    tipo: string;
+    place?: string;
+    small?: boolean;
+    medium?: boolean;
+    large?: boolean;
 }

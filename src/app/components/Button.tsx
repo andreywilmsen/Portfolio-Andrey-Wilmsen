@@ -2,7 +2,7 @@
 import clsx from "clsx";
 import { ButtonProps } from "./types";
 
-export default function Button({ name, source, color, href, hidden, projectsButtons, heroButtons, aboutButtons, tableButton, addItem, hov, noImage, onClick }: ButtonProps) {
+export default function Button({ name, source, color, href, hidden, projectsButtons, heroButtons, aboutButtons, tableButton, modalButton, addItem, hov, noImage, onClick }: ButtonProps) {
 
     const baseClasses = clsx(
         "flex items-center rounded text-white py-5 transition-transform duration-300 cursor-pointer",
@@ -10,6 +10,7 @@ export default function Button({ name, source, color, href, hidden, projectsButt
         heroButtons && "md:w-36 h-8",
         aboutButtons && "w-[150px] h-[35px]",
         tableButton && "w-[40px] mx-2 h-[40px] justify-center",
+        modalButton && "md:w-36 h-8 w-[131px] justify-center mr-2",
         addItem && "md:w-36 h-8 w-[131px] justify-center",
         hov && "hover:scale-105",
         color
