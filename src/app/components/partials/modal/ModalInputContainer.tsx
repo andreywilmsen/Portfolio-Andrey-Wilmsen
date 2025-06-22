@@ -2,12 +2,9 @@
 
 import Input from "../../Input";
 import TextArea from "../../TextArea";
-
-interface ModalInputContainerProps {
-    blog?: boolean;
-    projects?: boolean;
-    last_updates?: boolean;
-}
+import InputContainerTech from "./InputContainerTech";
+import { tech } from "../../types";
+import { ModalInputContainerProps } from "../../types";
 
 export default function ModalInputContainer({ blog, projects, last_updates }: ModalInputContainerProps) {
 
@@ -16,6 +13,7 @@ export default function ModalInputContainer({ blog, projects, last_updates }: Mo
             <Input medium tipo="text" place="Título" />
             <Input medium tipo="date" />
             {projects && <Input medium tipo="text" place="Link do projeto" />}
+            {projects && <InputContainerTech tech={tech} />}
             {blog && <TextArea />}
         </div>
     );
