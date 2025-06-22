@@ -1,9 +1,17 @@
+"use client"
+
 import Header from "@/app/components/Header/Menu";
 import { menuItems } from "../types";
+import { useDispatch } from "react-redux";
+import { openModal } from "@/store/modalSlice";
 import Table from "@/app/components/Table";
 import Button from "@/app/components/Button";
+import Modal from "@/app/components/Modal";
 
 export default function UltimasAtualizacoes() {
+
+  const dispatch = useDispatch();
+
   return (
     <section>
       <Header items={menuItems} admin />
@@ -12,9 +20,10 @@ export default function UltimasAtualizacoes() {
           <h1 className="font-semibold text-[20px]">Últimas Atualizações</h1>
           <Table last_updates />
           <div className="flex justify-center md:justify-start items-center">
-            <Button hov addItem name="Adicionar" source="soma.png" color="bg-success" />
+            <Button onClick={() => dispatch(openModal())} hov addItem name="Adicionar" source="soma.png" color="bg-success" />
           </div>
         </div>
+        <Modal last_updates nome={"Últimas atualizações"} />
       </div>
     </section>
   );

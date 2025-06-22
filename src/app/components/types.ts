@@ -20,7 +20,10 @@ export interface LogoProps {
 }
 
 export interface ModalProps {
-    nome: string,
+    nome?: string;
+    blog?: boolean;
+    projects?: boolean;
+    last_updates?: boolean;
 }
 
 export interface InputProps {
@@ -31,7 +34,28 @@ export interface InputProps {
     large?: boolean;
 }
 
+
+export const tech = [
+    { name: "Vue" },
+    { name: "React" },
+    { name: "Node" },
+    { name: "Next" },
+    { name: "MongoDB" },
+    { name: "MySQL" },
+    { name: "Tailwind" },
+    { name: "Express" },
+    { name: "JWT" },
+    { name: "Javascript" },
+    { name: "Java" },
+]
+
 export interface TableProps {
+    blog?: boolean;
+    projects?: boolean;
+    last_updates?: boolean;
+}
+
+interface ModalInputContainerProps {
     blog?: boolean;
     projects?: boolean;
     last_updates?: boolean;
