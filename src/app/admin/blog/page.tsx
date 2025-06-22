@@ -25,7 +25,7 @@ export default function Blog() {
                         </div>
                     </div>
                 </div>
-                <Modal nome={"Blog"} />
+                <Modal blog nome={"Blog"} />
             </section>
 
         </>

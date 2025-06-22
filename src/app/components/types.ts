@@ -20,7 +20,10 @@ export interface LogoProps {
 }
 
 export interface ModalProps {
-    nome: string,
+    nome?: string;
+    blog?: boolean;
+    projects?: boolean;
+    last_updates?: boolean;
 }
 
 export interface InputProps {
