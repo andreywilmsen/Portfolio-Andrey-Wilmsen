@@ -6,8 +6,8 @@ export const menuItems: { item: string; link: string }[] = [
     { item: "Últimas atualizações", link: "ultimas-atualizacoes" },
 ];
 
-export const tableItems: { data: string, descricao: string }[] = [
-    { data: "19/06/2025", descricao: "Descrição do item 1" },
-    { data: "20/06/2025", descricao: "Descrição do item 2" },
-    { data: "21/06/2025", descricao: "Descrição do item 3" },
+export const tableItems: { data: string, descricao: string, link: string }[] = [
+    { data: "19/06/2025", descricao: "Descrição do item 1", link: "www.google.com" },
+    { data: "20/06/2025", descricao: "Descrição do item 2", link: "www.google.com" },
+    { data: "21/06/2025", descricao: "Descrição do item 3", link: "www.google.com" },
 ]

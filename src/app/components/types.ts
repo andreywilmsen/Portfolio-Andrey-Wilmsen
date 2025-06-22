@@ -30,3 +30,9 @@ export interface InputProps {
     medium?: boolean;
     large?: boolean;
 }
+
+export interface TableProps {
+    blog?: boolean;
+    projects?: boolean;
+    last_updates?: boolean;
+}
