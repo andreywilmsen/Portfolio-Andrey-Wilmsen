@@ -55,7 +55,7 @@ export interface TableProps {
     last_updates?: boolean;
 }
 
-interface ModalInputContainerProps {
+export interface ModalInputContainerProps {
     blog?: boolean;
     projects?: boolean;
     last_updates?: boolean;
