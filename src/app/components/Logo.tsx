@@ -1,9 +1,6 @@
 
 import clsx from "clsx";
-
-interface LogoProps {
-    hidden?: boolean;
-}
+import { LogoProps } from "./types";
 
 export default function Logo({ hidden }: LogoProps) {
     return (
